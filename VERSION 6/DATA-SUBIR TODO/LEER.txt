@@ -1,0 +1,5 @@
+Necesitamos poner esta data al colab:
+Insumos (salidas del Sprint 1): dataset_integrado_horario_HU03.csv (malla horaria integrada) y Historico_Indisponibilidad_Operativa*.csv (eventos con fecha_inicio / fecha_fin). Opcionalmente, los CSV crudos del datalogger, para re-verificar duplicados por marca de tiempo.
+
+
+Y saldra varios dataset, pero el que más relvante es dataset_limpio_horario_HU05.csv ese subimos para Colab HU06
