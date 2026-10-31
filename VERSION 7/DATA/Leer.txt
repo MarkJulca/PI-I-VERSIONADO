@@ -1,0 +1,30 @@
+Al ejecutar colab: Nos exporta el dataset_limpio_horario_HU05.csv que se usara en HU06, en el mismo COLAB.
+
+
+Las funciones siguientes devuelven exactamente lo que necesitan los dos modelos del TB2. HU07 y HU08 no deben reconstruir nada: solo llamarlas.
+Obtener datos y 
+obtener fold
+
+Se usa para HU07: https://prnt.sc/1vqNtmllCP7q
+esto dataset_features_HU06.csv que exporta el HU06
+Para qué sirve: Es el insumo ideal para algoritmos sensibles a la escala (como regresión lineal, Ridge, Lasso, ElasticNet, K-Nearest Neighbors o Redes Neuronales) que utilices como baselines en la regresión de doble salida.
+
+esto dataset_features_HU06_sin_escalar.csv (Valores en unidades originales):
+Para qué sirve: Es el insumo ideal si vas a entrenar modelos basados en árboles (como Random Forest, Gradient Boosting, XGBoost o LightGBM). Los árboles de decisión son invariantes a la escala y entrenarlos con los valores crudos facilita enormemente la posterior interpretación de impactos y la atribución de importancia con valores SHAP (en unidades físicas reales como metros de ola o m/s de viento).
+
+2. Recursos de apoyo clave para la HU07:
+folds_walk_forward_HU06.csv: Te sirve para mapear las fechas límites de cada uno de los 4 folds dinámicos si vas a evaluar la estabilidad temporal de tu regresor antes de tocar el conjunto de prueba final.
+config_features_HU06.json: Contiene los metadatos de configuración por si requieres validar la lista exacta de las variables objetivo finales (horas_hasta_inicio_24h y duracion_indisponibilidad_h).
+
+¿Para qué sirve escalador_HU06.joblib?
+Este archivo contiene el objeto del escalador (StandardScaler en tu configuración) que fue ajustado (fitted) utilizando únicamente los datos del conjunto de Entrenamiento en la HU06.
+*Para evitar Data Leakage (Fuga de datos) en HU07/HU08: 
+*Crucial para la HU13 (Puesta en producción / Inferencia): Cuando el modelo esté operando en tiempo real en la HU13, recibirá datos meteorológicos nuevos (p. ej., la altura de ola medida en este momento, $1.8\text{ m}$$1.8\text{ m}$). Para poder pasárselo al modelo, no puedes reajustar un escalador con una sola fila; debes cargar escalador_HU06.joblib usando joblib.load() y aplicar la misma transformación matemática que usaron los modelos durante su fase de entrenamiento.
+
+
+ ¿Para qué sirve catalogo_variables_HU06.csv?
+Este es el diccionario de metadatos de todas las variables predictoras (las 83 columnas generadas en tu matriz $X$$X$).
+¿Por qué es indispensable?
+*Control de orden y consistencia: 
+*Filtro selectivo de normalización: 
+*Gobernanza y Documentación: 
