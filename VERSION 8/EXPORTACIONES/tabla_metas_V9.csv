@@ -1,0 +1,9 @@
+Formulación,Objetivo,Mejor modelo,Resultado walk-forward,Meta,Estado,Referencia
+Original (inicio del evento),duracion_indisponibilidad_h,LightGBM,MAE 1.02 · RMSE 1.27 · MAPE 21.3% · R² -0.906,R² ≥ 0.75,NO CUMPLE,0.98× piso trivial
+Original (inicio del evento),horas_hasta_inicio_6h,Random Forest,MAE 1.49 · RMSE 1.72 · MAPE 44.5% · R² 0.009,R² ≥ 0.75,NO CUMPLE,0.99× piso trivial
+Original (inicio del evento),ocurre_evento_6h,XGBoost,AUC 0.853,AUC ≥ 0.6,CUMPLE,—
+Original (inicio del evento),ocurre_evento_6h,LightGBM,F1 0.350 (trivial 0.118),F1 ≥ 0.65,NO CUMPLE,—
+Operativa (V9),indisponible_prox_H,LightGBM · sensores + estado operativo + evento observado,AUC 0.937 ± 0.015,AUC ≥ 0.6,CUMPLE,persistencia AUC 0.728
+Operativa (V9),indisponible_prox_H,LightGBM · sensores + estado operativo + evento observado,F1 0.682 ± 0.094 (trivial 0.209),F1 ≥ 0.65,CUMPLE,persistencia F1 0.624
+Operativa (V9),horas_indisponibles_prox_H,XGBoost · sensores + estado operativo + evento observado,MAE 0.30 · RMSE 0.73 · MAPE 55.4% · R² 0.411 ± 0.144,R² ≥ 0.75,NO CUMPLE,persistencia R² 0.314 · MAE 0.31
+Operativa (V9),horas_restantes_evento,GBM · sensores + estado operativo + evento observado,MAE 0.92 · RMSE 1.17 · MAPE 30.9% · R² 0.448 ± 0.177,R² ≥ 0.75,NO CUMPLE,persistencia R² 0.423 · MAE 0.95

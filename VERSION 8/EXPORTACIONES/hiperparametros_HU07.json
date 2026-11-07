@@ -1,0 +1,364 @@
+{
+  "seccion_3_3": {
+    "Random Forest | horas_hasta_inicio_6h": {
+      "objetivo_walk_forward": 1.48598,
+      "parametros": {
+        "n_estimators": 300,
+        "max_depth": 14,
+        "min_samples_leaf": 22,
+        "max_features": 0.11489063968212153,
+        "max_samples": 0.5565734475870319
+      }
+    },
+    "GBM | horas_hasta_inicio_6h": {
+      "objetivo_walk_forward": 1.49181,
+      "parametros": {
+        "n_estimators": 100,
+        "learning_rate": 0.01177732389752475,
+        "max_depth": 3,
+        "subsample": 0.5446683695728266,
+        "min_samples_leaf": 33,
+        "max_features": 0.3857837664927689,
+        "loss": "squared_error"
+      }
+    },
+    "XGBoost | horas_hasta_inicio_6h": {
+      "objetivo_walk_forward": 1.49381,
+      "parametros": {
+        "n_estimators": 125,
+        "learning_rate": 0.011800734064396088,
+        "max_depth": 3,
+        "subsample": 0.7599651683800195,
+        "colsample_bytree": 0.38256746285383186,
+        "min_child_weight": 31,
+        "reg_lambda": 0.2264416342970856,
+        "gamma": 1.8644203386728748,
+        "objective": "reg:absoluteerror"
+      }
+    },
+    "LightGBM | horas_hasta_inicio_6h": {
+      "objetivo_walk_forward": 1.49371,
+      "parametros": {
+        "n_estimators": 375,
+        "learning_rate": 0.023390252935947414,
+        "num_leaves": 29,
+        "max_depth": 8,
+        "min_child_samples": 91,
+        "subsample": 0.7848785569603529,
+        "colsample_bytree": 0.4246477923517465,
+        "reg_lambda": 1.0470293236616164,
+        "objective": "regression"
+      }
+    },
+    "Random Forest | duracion_indisponibilidad_h": {
+      "objetivo_walk_forward": 1.03357,
+      "parametros": {
+        "n_estimators": 350,
+        "max_depth": 12,
+        "min_samples_leaf": 52,
+        "max_features": 0.6309032138271591,
+        "max_samples": 0.9971020968954022
+      }
+    },
+    "GBM | duracion_indisponibilidad_h": {
+      "objetivo_walk_forward": 1.02624,
+      "parametros": {
+        "n_estimators": 100,
+        "learning_rate": 0.026932050937719443,
+        "max_depth": 1,
+        "subsample": 0.6346818024740309,
+        "min_samples_leaf": 54,
+        "max_features": 0.5564302048753906,
+        "loss": "squared_error"
+      }
+    },
+    "XGBoost | duracion_indisponibilidad_h": {
+      "objetivo_walk_forward": 1.02203,
+      "parametros": {
+        "n_estimators": 275,
+        "learning_rate": 0.023906842468872227,
+        "max_depth": 1,
+        "subsample": 0.5038306746285427,
+        "colsample_bytree": 0.4236935935790449,
+        "min_child_weight": 39,
+        "reg_lambda": 0.3439055158256752,
+        "gamma": 1.9531252393126657,
+        "objective": "reg:absoluteerror"
+      }
+    },
+    "LightGBM | duracion_indisponibilidad_h": {
+      "objetivo_walk_forward": 1.01767,
+      "parametros": {
+        "n_estimators": 100,
+        "learning_rate": 0.02753594954660652,
+        "num_leaves": 8,
+        "max_depth": 7,
+        "min_child_samples": 83,
+        "subsample": 0.988098373775152,
+        "colsample_bytree": 0.7282595755150534,
+        "reg_lambda": 0.14384130893279998,
+        "objective": "regression"
+      }
+    },
+    "XGBoost | ocurre_evento_6h": {
+      "objetivo_walk_forward": 0.85285,
+      "parametros": {
+        "n_estimators": 250,
+        "learning_rate": 0.013825594319229233,
+        "max_depth": 5,
+        "subsample": 0.6845305169341395,
+        "colsample_bytree": 0.3172842255045795,
+        "min_child_weight": 19,
+        "reg_lambda": 0.1501819593695022,
+        "gamma": 1.9821876939991108,
+        "scale_pos_weight": 1.4267988529164168
+      }
+    },
+    "Random Forest | ocurre_evento_6h": {
+      "objetivo_walk_forward": 0.84515,
+      "parametros": {
+        "n_estimators": 200,
+        "max_depth": 10,
+        "min_samples_leaf": 45,
+        "max_features": 0.5190609389379257,
+        "max_samples": 0.5780093202212182,
+        "class_weight": "balanced_subsample"
+      }
+    },
+    "LightGBM | ocurre_evento_6h": {
+      "objetivo_walk_forward": 0.84936,
+      "parametros": {
+        "n_estimators": 175,
+        "learning_rate": 0.013233140654002624,
+        "num_leaves": 44,
+        "max_depth": 3,
+        "min_child_samples": 61,
+        "subsample": 0.5197871689630342,
+        "colsample_bytree": 0.9461881998768965,
+        "reg_lambda": 4.913815989933372,
+        "scale_pos_weight": 1.240294688166346
+      }
+    }
+  },
+  "seccion_3_4": {
+    "indisponible_prox_H | LightGBM | solo sensores (HU06 + excedencias + calendario)": {
+      "n_estimators": 250,
+      "learning_rate": 0.022947700905386465,
+      "num_leaves": 14,
+      "min_child_samples": 16,
+      "subsample": 0.8640575658236861,
+      "colsample_bytree": 0.2559839985465216,
+      "reg_lambda": 0.14123937771830816
+    },
+    "horas_indisponibles_prox_H | LightGBM | solo sensores (HU06 + excedencias + calendario)": {
+      "n_estimators": 250,
+      "learning_rate": 0.01909565280104538,
+      "num_leaves": 28,
+      "min_child_samples": 25,
+      "subsample": 0.9010984903770198,
+      "colsample_bytree": 0.2596405149438167,
+      "reg_lambda": 27.838036931305016
+    },
+    "horas_restantes_evento | LightGBM | solo sensores (HU06 + excedencias + calendario)": {
+      "n_estimators": 200,
+      "learning_rate": 0.01405830109106666,
+      "num_leaves": 9,
+      "min_child_samples": 60,
+      "subsample": 0.7919820489404608,
+      "colsample_bytree": 0.7547577899270068,
+      "reg_lambda": 17.6683766726499
+    },
+    "indisponible_prox_H | XGBoost | sensores + estado operativo + evento observado": {
+      "n_estimators": 250,
+      "learning_rate": 0.034789412482245985,
+      "max_depth": 4,
+      "min_child_weight": 2,
+      "subsample": 0.829243715837198,
+      "colsample_bytree": 0.33514555701060006,
+      "reg_lambda": 23.066923404129206
+    },
+    "indisponible_prox_H | Random Forest | sensores + estado operativo + evento observado": {
+      "n_estimators": 100,
+      "max_depth": 14,
+      "min_samples_leaf": 34,
+      "max_features": 0.18493564427131048,
+      "max_samples": 0.5727299868828403
+    },
+    "indisponible_prox_H | LightGBM | sensores + estado operativo + evento observado": {
+      "n_estimators": 350,
+      "learning_rate": 0.02817701651845071,
+      "num_leaves": 26,
+      "min_child_samples": 12,
+      "subsample": 0.8421475776626198,
+      "colsample_bytree": 0.2573662981707528,
+      "reg_lambda": 4.537191516668635
+    },
+    "horas_indisponibles_prox_H | LightGBM | sensores + estado operativo + evento observado": {
+      "n_estimators": 500,
+      "learning_rate": 0.010038072355879314,
+      "num_leaves": 21,
+      "min_child_samples": 41,
+      "subsample": 0.8073674582507788,
+      "colsample_bytree": 0.8766841529819559,
+      "reg_lambda": 27.2600340809591
+    },
+    "horas_indisponibles_prox_H | XGBoost | sensores + estado operativo + evento observado": {
+      "n_estimators": 500,
+      "learning_rate": 0.018269807570395948,
+      "max_depth": 2,
+      "min_child_weight": 11,
+      "subsample": 0.7274266856030605,
+      "colsample_bytree": 0.9477092616449102,
+      "reg_lambda": 19.64118419047006
+    },
+    "horas_indisponibles_prox_H | Random Forest | sensores + estado operativo + evento observado": {
+      "n_estimators": 100,
+      "max_depth": 3,
+      "min_samples_leaf": 35,
+      "max_features": 0.34044600469728353,
+      "max_samples": 0.7832290311184182
+    },
+    "horas_indisponibles_prox_H | GBM | sensores + estado operativo + evento observado": {
+      "max_iter": 200,
+      "learning_rate": 0.03843814081109618,
+      "max_depth": 2,
+      "min_samples_leaf": 14,
+      "l2_regularization": 7.531914582354007,
+      "loss": "squared_error"
+    },
+    "horas_restantes_evento | LightGBM | sensores + estado operativo + evento observado": {
+      "n_estimators": 600,
+      "learning_rate": 0.07593025032878879,
+      "num_leaves": 30,
+      "min_child_samples": 11,
+      "subsample": 0.8455705020983499,
+      "colsample_bytree": 0.504773060981534,
+      "reg_lambda": 0.15265706789161917
+    },
+    "horas_restantes_evento | XGBoost | sensores + estado operativo + evento observado": {
+      "n_estimators": 350,
+      "learning_rate": 0.015992611639728944,
+      "max_depth": 5,
+      "min_child_weight": 8,
+      "subsample": 0.6955339099662495,
+      "colsample_bytree": 0.9561092353843097,
+      "reg_lambda": 1.6348668452500934
+    },
+    "horas_restantes_evento | Random Forest | sensores + estado operativo + evento observado": {
+      "n_estimators": 200,
+      "max_depth": 9,
+      "min_samples_leaf": 6,
+      "max_features": 0.4889356152399033,
+      "max_samples": 0.8870145737504873
+    },
+    "horas_restantes_evento | GBM | sensores + estado operativo + evento observado": {
+      "max_iter": 150,
+      "learning_rate": 0.03722325318128047,
+      "max_depth": 6,
+      "min_samples_leaf": 13,
+      "l2_regularization": 5.249288562496623,
+      "loss": "absolute_error"
+    }
+  },
+  "seccion_3_5": {
+    "duracion_indisponibilidad_h | LightGBM · HU06": {
+      "n_estimators": 200,
+      "learning_rate": 0.08337356872348377,
+      "num_leaves": 23,
+      "min_child_samples": 90,
+      "subsample": 0.9753830439734378,
+      "colsample_bytree": 0.5280772325329537,
+      "reg_lambda": 1.484126294624679,
+      "objective": "regression",
+      "suavizado": 1.0
+    },
+    "duracion_indisponibilidad_h | Residual · HU06": {
+      "n_estimators": 500,
+      "learning_rate": 0.03580665507790811,
+      "num_leaves": 12,
+      "min_child_samples": 88,
+      "subsample": 0.7729228195821113,
+      "colsample_bytree": 0.5677549666783073,
+      "reg_lambda": 23.344945896215947,
+      "objective": "regression_l1",
+      "suavizado": 0.11719153399610316
+    },
+    "duracion_indisponibilidad_h | LightGBM · HU06 + estado operativo + excedencias + régimen": {
+      "n_estimators": 150,
+      "learning_rate": 0.012852801713856391,
+      "num_leaves": 14,
+      "min_child_samples": 59,
+      "subsample": 0.610094907513399,
+      "colsample_bytree": 0.6463523509565628,
+      "reg_lambda": 0.6276643094031845,
+      "objective": "regression_l1",
+      "suavizado": 1.0
+    },
+    "duracion_indisponibilidad_h | Residual · HU06 + estado operativo + excedencias + régimen": {
+      "n_estimators": 500,
+      "learning_rate": 0.026094788299533916,
+      "num_leaves": 20,
+      "min_child_samples": 84,
+      "subsample": 0.6796337197700605,
+      "colsample_bytree": 0.7787076651988835,
+      "reg_lambda": 10.322961196384608,
+      "objective": "regression_l1",
+      "suavizado": 0.09175695735024535
+    },
+    "duracion_indisponibilidad_h | LightGBM · régimen + estado operativo": {
+      "n_estimators": 600,
+      "learning_rate": 0.06816394904684626,
+      "num_leaves": 23,
+      "min_child_samples": 107,
+      "subsample": 0.8609397873238516,
+      "colsample_bytree": 0.5533749410050735,
+      "reg_lambda": 3.050319974881772,
+      "objective": "huber",
+      "suavizado": 1.0
+    },
+    "duracion_indisponibilidad_h | Residual · régimen + estado operativo": {
+      "n_estimators": 100,
+      "learning_rate": 0.017871239723908323,
+      "num_leaves": 21,
+      "min_child_samples": 19,
+      "subsample": 0.6545436745756652,
+      "colsample_bytree": 0.7111047441759917,
+      "reg_lambda": 0.2708206750725146,
+      "objective": "regression_l1",
+      "suavizado": 0.17790668710145482
+    },
+    "horas_hasta_inicio_6h | LightGBM · HU06": {
+      "n_estimators": 150,
+      "learning_rate": 0.01990664825213015,
+      "num_leaves": 16,
+      "min_child_samples": 109,
+      "subsample": 0.5576313209661744,
+      "colsample_bytree": 0.9449250557553474,
+      "reg_lambda": 0.13038796826292395,
+      "objective": "regression_l1",
+      "suavizado": 1.0
+    },
+    "horas_hasta_inicio_6h | LightGBM · HU06 + estado operativo + excedencias + régimen": {
+      "n_estimators": 200,
+      "learning_rate": 0.030351831272242755,
+      "num_leaves": 10,
+      "min_child_samples": 113,
+      "subsample": 0.5332762046252445,
+      "colsample_bytree": 0.6856990355011333,
+      "reg_lambda": 0.5354479117148007,
+      "objective": "regression_l1",
+      "suavizado": 1.0
+    },
+    "horas_hasta_inicio_6h | LightGBM · régimen + estado operativo": {
+      "n_estimators": 100,
+      "learning_rate": 0.011099174726022218,
+      "num_leaves": 25,
+      "min_child_samples": 45,
+      "subsample": 0.7027837270307715,
+      "colsample_bytree": 0.8077986414650481,
+      "reg_lambda": 0.6763886279194167,
+      "objective": "regression_l1",
+      "suavizado": 1.0
+    }
+  }
+}

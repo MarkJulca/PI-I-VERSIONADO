@@ -1,0 +1,90 @@
+{
+  "horas_hasta_inicio_6h | Random Forest · final": {
+    "n_estimators": 250,
+    "max_depth": 14,
+    "min_samples_leaf": 30,
+    "max_features": 0.12882287535926604,
+    "max_samples": 0.6465737072418448,
+    "suavizado": 1.0,
+    "pruebas_optuna": 20
+  },
+  "horas_hasta_inicio_6h | GBM · final": {
+    "n_estimators": 100,
+    "learning_rate": 0.01177732389752475,
+    "max_depth": 3,
+    "subsample": 0.5446683695728266,
+    "min_samples_leaf": 33,
+    "max_features": 0.3857837664927689,
+    "loss": "squared_error",
+    "suavizado": 1.0,
+    "pruebas_optuna": 20
+  },
+  "horas_hasta_inicio_6h | XGBoost · final": {
+    "n_estimators": 100,
+    "learning_rate": 0.015545877089137102,
+    "max_depth": 2,
+    "subsample": 0.5694189142543992,
+    "colsample_bytree": 0.75274636813821,
+    "min_child_weight": 24,
+    "reg_lambda": 47.469872354574285,
+    "objective": "reg:squarederror",
+    "suavizado": 1.0,
+    "pruebas_optuna": 20
+  },
+  "horas_hasta_inicio_6h | LightGBM · final": {
+    "n_estimators": 150,
+    "learning_rate": 0.01990664825213015,
+    "num_leaves": 16,
+    "min_child_samples": 109,
+    "subsample": 0.5576313209661744,
+    "colsample_bytree": 0.9449250557553474,
+    "reg_lambda": 0.13038796826292395,
+    "objective": "regression_l1",
+    "suavizado": 1.0,
+    "pruebas_optuna": "sección 3.5"
+  },
+  "duracion_indisponibilidad_h | Random Forest · final": {
+    "n_estimators": 250,
+    "max_depth": 13,
+    "min_samples_leaf": 35,
+    "max_features": 0.5695093699141263,
+    "max_samples": 0.5485143945870747,
+    "suavizado": 0.02493411462833764,
+    "pruebas_optuna": 20
+  },
+  "duracion_indisponibilidad_h | GBM · final": {
+    "n_estimators": 250,
+    "learning_rate": 0.011653479933729319,
+    "max_depth": 1,
+    "subsample": 0.6181383980425377,
+    "min_samples_leaf": 53,
+    "max_features": 0.6717590283970467,
+    "loss": "huber",
+    "suavizado": 0.004323987248789803,
+    "pruebas_optuna": 20
+  },
+  "duracion_indisponibilidad_h | XGBoost · final": {
+    "n_estimators": 50,
+    "learning_rate": 0.1915851109041375,
+    "max_depth": 4,
+    "subsample": 0.7519918527241465,
+    "colsample_bytree": 0.8120622835190793,
+    "min_child_weight": 22,
+    "reg_lambda": 11.354339787717691,
+    "objective": "reg:squarederror",
+    "suavizado": 0.06121777634338669,
+    "pruebas_optuna": 20
+  },
+  "duracion_indisponibilidad_h | LightGBM · final": {
+    "n_estimators": 100,
+    "learning_rate": 0.017871239723908323,
+    "num_leaves": 21,
+    "min_child_samples": 19,
+    "subsample": 0.6545436745756652,
+    "colsample_bytree": 0.7111047441759917,
+    "reg_lambda": 0.2708206750725146,
+    "objective": "regression_l1",
+    "suavizado": 0.17790668710145482,
+    "pruebas_optuna": "sección 3.5"
+  }
+}

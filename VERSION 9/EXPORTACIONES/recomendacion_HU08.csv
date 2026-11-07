@@ -1,0 +1,4 @@
+Salida,Primero del ranking T14,Resultado walk-forward,Comparado con,Mejora,Veredicto
+Regresor · horas_hasta_inicio_6h,XGBoost · final,MAE 1.49 ± 0.01 h · RMSE 1.73 h · MAPE 44.8 %,Ref · regresión lineal: MAE 1.62 h  |  piso: MAE 1.50 h,0.92× la mejor referencia (3/4 ventanas) · 0.99× el piso,SÍ supera a las 3 referencias · NO cumple la meta: queda igual que el piso trivial
+Regresor · duracion_indisponibilidad_h,GBM · final,MAE 0.84 ± 0.07 h · RMSE 1.09 h · MAPE 19.5 %,Ref · franja horaria: MAE 1.14 h  |  piso: MAE 1.03 h,0.74× la mejor referencia (3/4 ventanas) · 0.82× el piso,SÍ supera a las 3 referencias · SÍ cumple la meta (≥ 10 % mejor que el piso)
+Clasificador · ocurre_evento_6h,XGBoost,AUC 0.853 ± 0.052 · F1 0.349,Random Forest: AUC 0.845 · F1 0.345  |  franja horaria: AUC 0.498,ΔAUC +0.008 frente a Random Forest,SÍ cumple AUC ≥ 0.6 y supera a las referencias (AUC ≈ 0.50)

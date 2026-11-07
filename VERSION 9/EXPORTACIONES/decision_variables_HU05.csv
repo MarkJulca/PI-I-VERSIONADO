@@ -1,0 +1,9 @@
+variable,rol,pct_vacio_antes,pct_vacio_despues,completitud_despues_pct,decision
+velocidad_viento_ms,predictor,0.38,0.26,99.74,CONSERVAR
+direccion_viento_deg,predictor,0.38,0.26,99.74,CONSERVAR
+temperatura_c,predictor,0.38,0.06,99.94,CONSERVAR
+humedad_relative_pct,predictor,0.38,0.53,99.47,CONSERVAR
+presion_atmosferica_hpa,predictor,0.38,0.06,99.94,CONSERVAR
+altura_olas_m,predictor,0.58,0.52,99.48,CONSERVAR
+temperatura_interna_datalogger_c,diagnostico,0.38,0.06,99.94,CONSERVAR
+voltaje_datalogger_v,diagnostico,0.38,0.06,99.94,CONSERVAR

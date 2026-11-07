@@ -1,0 +1,15 @@
+modelo,familia,MAE (h),RMSE (h),MAPE (%),R²,MAE/piso,RMSE/piso,MAPE/piso,MAE val (h),RMSE val (h),MAPE val (%),R² val,salida
+Random Forest,avanzado,1.49 ± 0.02,1.72 ± 0.02,44.5 ± 1.7,0.009 ± 0.021,0.99,0.995,0.992,1.465,1.698,43.7,0.032,horas_hasta_inicio_6h
+GBM,avanzado,1.49 ± 0.01,1.73 ± 0.02,44.7 ± 1.8,0.001 ± 0.017,0.994,0.999,0.996,1.475,1.705,44.1,0.024,horas_hasta_inicio_6h
+LightGBM,avanzado,1.49 ± 0.01,1.73 ± 0.00,44.9 ± 1.0,-0.002 ± 0.002,0.996,1.0,1.0,1.475,1.736,45.7,-0.013,horas_hasta_inicio_6h
+XGBoost,avanzado,1.49 ± 0.02,1.73 ± 0.02,44.9 ± 1.8,0.001 ± 0.022,0.996,0.999,1.0,1.477,1.707,44.2,0.021,horas_hasta_inicio_6h
+Media global (piso trivial),referencia,1.50 ± 0.00,1.73 ± 0.00,44.9 ± 1.0,-0.001 ± 0.001,1.0,1.0,1.0,1.5,1.725,44.7,-0.0,horas_hasta_inicio_6h
+Promedio histórico por franja horaria,referencia,1.65 ± 0.20,1.93 ± 0.27,51.2 ± 9.1,-0.258 ± 0.365,1.099,1.113,1.142,1.491,1.724,43.7,0.002,horas_hasta_inicio_6h
+Regresión lineal,referencia,3.94 ± 2.61,5.25 ± 3.88,139.6 ± 99.7,-11.970 ± 17.310,2.629,3.034,3.111,1.774,2.202,58.4,-0.629,horas_hasta_inicio_6h
+LightGBM,avanzado,1.02 ± 0.35,1.27 ± 0.34,21.3 ± 5.8,-0.906 ± 1.193,0.984,0.992,0.987,0.87,1.115,13.6,-0.459,duracion_indisponibilidad_h
+XGBoost,avanzado,1.02 ± 0.35,1.28 ± 0.34,21.6 ± 6.1,-0.943 ± 1.197,0.988,1.001,0.998,0.888,1.12,13.8,-0.472,duracion_indisponibilidad_h
+GBM,avanzado,1.03 ± 0.36,1.28 ± 0.36,21.5 ± 6.0,-0.941 ± 1.256,0.992,0.999,0.992,0.863,1.098,13.4,-0.416,duracion_indisponibilidad_h
+Random Forest,avanzado,1.03 ± 0.36,1.29 ± 0.35,21.6 ± 5.8,-0.968 ± 1.253,0.999,1.006,0.999,0.9,1.152,14.1,-0.558,duracion_indisponibilidad_h
+Media global (piso trivial),referencia,1.03 ± 0.37,1.28 ± 0.37,21.6 ± 5.8,-0.951 ± 1.291,1.0,1.0,1.0,0.873,1.079,13.9,-0.367,duracion_indisponibilidad_h
+Promedio histórico por franja horaria,referencia,1.14 ± 0.37,1.40 ± 0.40,23.6 ± 8.3,-1.362 ± 1.483,1.105,1.092,1.089,0.879,1.078,14.0,-0.364,duracion_indisponibilidad_h
+Regresión lineal,referencia,2.11 ± 0.89,2.64 ± 1.24,43.1 ± 15.6,-7.986 ± 8.807,2.04,2.065,1.993,1.125,1.341,18.2,-1.111,duracion_indisponibilidad_h

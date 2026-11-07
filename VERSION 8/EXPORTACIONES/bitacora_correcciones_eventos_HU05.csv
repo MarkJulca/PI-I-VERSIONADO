@@ -1,0 +1,43 @@
+id_evento,regla,campo,valor_antes,valor_despues,accion,requiere_validacion
+EV161,R0,id_evento,2 filas con distinto contenido,se conserva la última,Dato digitado más de una vez con valores distintos,True
+EV190,R0,id_evento,2 filas con distinto contenido,se conserva la última,Dato digitado más de una vez con valores distintos,True
+EV202,R0,id_evento,2 filas con distinto contenido,se conserva la última,Dato digitado más de una vez con valores distintos,True
+EV247,R0,id_evento,2 filas con distinto contenido,se conserva la última,Dato digitado más de una vez con valores distintos,True
+EV010,R2,fecha_fin,nula,2024-04-19 14:47:43,fin = inicio + duración (registrada = calculada),True
+EV060,R2,fecha_fin,nula,2025-06-20 17:06:30,fin = inicio + duración (registrada = calculada),True
+EV088,R2,fecha_fin,nula,2025-08-03 14:50:16,fin = inicio + duración (registrada = calculada),True
+EV047,R3,fecha_inicio/fecha_fin,2025-05-27 01:36:07 / 2025-05-26 18:22:19,2025-05-26 18:22:19 / 2025-05-27 01:36:07,Fechas intercambiadas: coincide con la duración registrada,False
+EV084,R3,fecha_inicio/fecha_fin,2025-07-27 17:10:16 / 2025-07-27 10:48:40,2025-07-27 10:48:40 / 2025-07-27 17:10:16,Fechas intercambiadas: coincide con la duración registrada,False
+EV101,R3,fecha_inicio/fecha_fin,2025-08-25 23:54:22 / 2025-08-25 17:31:34,2025-08-25 17:31:34 / 2025-08-25 23:54:22,Fechas intercambiadas: coincide con la duración registrada,False
+EV068,R4,duracion_h,6.85,6.25,Duración recalculada como fecha_fin - fecha_inicio,False
+EV071,R4,duracion_h,5.49,7.29,Duración recalculada como fecha_fin - fecha_inicio,True
+EV073,R4,duracion_h,7.4,6.2,Duración recalculada como fecha_fin - fecha_inicio,True
+EV079,R4,duracion_h,6.04,6.74,Duración recalculada como fecha_fin - fecha_inicio,False
+EV110,R4,duracion_h,6.82,5.62,Duración recalculada como fecha_fin - fecha_inicio,True
+EV152,R4,duracion_h,4.37,5.07,Duración recalculada como fecha_fin - fecha_inicio,False
+EV181,R4,duracion_h,6.36,7.06,Duración recalculada como fecha_fin - fecha_inicio,False
+EV004,R9,causa_registrada,Falla mecánica de equipo de amarre,excluido,Causa no meteo-oceanográfica,False
+EV011,R9,causa_registrada,Mantenimiento programado de grúa pórtico,excluido,Causa no meteo-oceanográfica,False
+EV016,R9,causa_registrada,Mantenimiento programado de grúa pórtico,excluido,Causa no meteo-oceanográfica,False
+EV026,R9,causa_registrada,Mantenimiento programado de grúa pórtico,excluido,Causa no meteo-oceanográfica,False
+EV028,R9,causa_registrada,Corte de energía en subestación portuaria,excluido,Causa no meteo-oceanográfica,False
+EV035,R9,causa_registrada,Corte de energía en subestación portuaria,excluido,Causa no meteo-oceanográfica,False
+EV041,R9,causa_registrada,Falla de comunicación con centro de control,excluido,Causa no meteo-oceanográfica,False
+EV047,R9,causa_registrada,Falla mecánica de equipo de amarre,excluido,Causa no meteo-oceanográfica,False
+EV048,R9,causa_registrada,Corte de energía en subestación portuaria,excluido,Causa no meteo-oceanográfica,False
+EV062,R9,causa_registrada,Mantenimiento programado de grúa pórtico,excluido,Causa no meteo-oceanográfica,False
+EV066,R9,causa_registrada,Falla de comunicación con centro de control,excluido,Causa no meteo-oceanográfica,False
+EV076,R9,causa_registrada,Mantenimiento programado de grúa pórtico,excluido,Causa no meteo-oceanográfica,False
+EV106,R9,causa_registrada,Falla de comunicación con centro de control,excluido,Causa no meteo-oceanográfica,False
+EV140,R9,causa_registrada,Corte de energía en subestación portuaria,excluido,Causa no meteo-oceanográfica,False
+EV145,R9,causa_registrada,Falla mecánica de equipo de amarre,excluido,Causa no meteo-oceanográfica,False
+EV166,R9,causa_registrada,Falla mecánica de equipo de amarre,excluido,Causa no meteo-oceanográfica,False
+EV168,R9,causa_registrada,Falla de comunicación con centro de control,excluido,Causa no meteo-oceanográfica,False
+EV184,R9,causa_registrada,Falla de comunicación con centro de control,excluido,Causa no meteo-oceanográfica,False
+EV186,R9,causa_registrada,Falla mecánica de equipo de amarre,excluido,Causa no meteo-oceanográfica,False
+EV192,R9,causa_registrada,Falla de comunicación con centro de control,excluido,Causa no meteo-oceanográfica,False
+EV197,R9,causa_registrada,Falla de comunicación con centro de control,excluido,Causa no meteo-oceanográfica,False
+EV210,R9,causa_registrada,Falla mecánica de equipo de amarre,excluido,Causa no meteo-oceanográfica,False
+EV218,R9,causa_registrada,Corte de energía en subestación portuaria,excluido,Causa no meteo-oceanográfica,False
+EV225,R9,causa_registrada,Mantenimiento programado de grúa pórtico,excluido,Causa no meteo-oceanográfica,False
+EV247,R9,causa_registrada,Falla mecánica de equipo de amarre,excluido,Causa no meteo-oceanográfica,False
