@@ -1,0 +1,17 @@
+Nivel,Salida,Modelo,Métrica,Criterio,Prueba,Estado,Lectura
+A. Aceptación (Sprint 3),Duración,GBM,MAE (h),≤ 1,0.705,CUMPLE,
+A. Aceptación (Sprint 3),Duración,GBM,RMSE (h),≤ 1.25,0.836,CUMPLE,
+A. Aceptación (Sprint 3),Duración,GBM,MAPE (%),≤ 25,12.2,CUMPLE,
+A. Aceptación (Sprint 3),Horas hasta el inicio,GBM,MAE (h),≤ 1.5,1.47,CUMPLE,
+A. Aceptación (Sprint 3),Horas hasta el inicio,GBM,RMSE (h),≤ 1.75,1.695,CUMPLE,
+A. Aceptación (Sprint 3),Horas hasta el inicio,GBM,MAPE (%),≤ 50,46.9,CUMPLE,
+A. Aceptación (Sprint 3),Ocurrencia en 6 h,XGBoost,AUC,≥ 0.75,0.875,CUMPLE,
+B. Indicador complementario (TB2),Duración,GBM,MAE / piso trivial,≤ 0.9,1.064,OBSERVACIÓN,en prueba la media histórica acierta igual o mejor → estimación aproximada
+B. Indicador complementario (TB2),Duración,GBM,Desv. del MAE entre bloques (h),≤ 0.15,0.2,OBSERVACIÓN,el error varía entre periodos (el piso también: 0.185 h)
+B. Indicador complementario (TB2),Horas hasta el inicio,GBM,MAE / mejor referencia,< 1,1.003,OBSERVACIÓN,empata con la regresión lineal (diferencia no significativa)
+B. Indicador complementario (TB2),Horas hasta el inicio,GBM,MAE / piso trivial,≤ 0.9,0.98,OBSERVACIÓN,mejora al piso < 10 % → estimación aproximada
+B. Indicador complementario (TB2),Horas hasta el inicio,GBM,Desv. del MAE entre bloques (h),≤ 0.1,0.012,CUMPLE,
+B. Indicador complementario (TB2),Ocurrencia en 6 h,XGBoost,AUC mínimo por bloque,≥ 0.7,0.817,CUMPLE,
+B. Indicador complementario (TB2),Ocurrencia en 6 h,XGBoost,F1-score,≥ 0.24,0.442,CUMPLE,
+A. Aceptación (Sprint 3),Duración,GBM,R² (solo referencial),—,-0.138,REFERENCIAL,no decide la aceptación
+A. Aceptación (Sprint 3),Horas hasta el inicio,GBM,R² (solo referencial),—,0.037,REFERENCIAL,no decide la aceptación
