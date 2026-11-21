@@ -1,0 +1,4 @@
+Tipo,Salida,Modelo final,Walk-forward (4 ventanas),Validación (reentrenado con entrenamiento),Piso en validación,Filas de entrenamiento
+Clasificador,ocurre_evento_6h,XGBoost,AUC 0.853 ± 0.052,AUC 0.884 · F1 0.455 (umbral 0.14),AUC 0.50 (azar),15231
+Regresor,horas_hasta_inicio_6h,LightGBM optimizado · HU06,MAE 1.49 · RMSE 1.72 · MAPE 44.8% (0.99 / 1.00 / 1.00 del piso),MAE 1.48 · RMSE 1.73 · MAPE 43.9% (0.99 / 1.00 / 0.98 del piso),MAE 1.50 · RMSE 1.73 · MAPE 44.7%,746
+Regresor,duracion_indisponibilidad_h,LightGBM sobre referencia adaptativa · régimen + estado operativo,MAE 0.83 · RMSE 1.09 · MAPE 19.5% (0.81 / 0.85 / 0.90 del piso),MAE 0.75 · RMSE 0.96 · MAPE 12.8% (0.86 / 0.89 / 0.92 del piso),MAE 0.87 · RMSE 1.08 · MAPE 13.9%,746
